@@ -1,6 +1,9 @@
 package ar.com.besy.microservices.futbolmanagercore.controllers;
 
+import ar.com.besy.microservices.futbolmanagercore.configurations.AppConfiguration;
+import ar.com.besy.microservices.futbolmanagercore.model.PlayerDTO;
 import ar.com.besy.microservices.futbolmanagercore.model.TeamDTO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,15 +14,17 @@ import java.util.List;
 @RequestMapping("/teams")
 public class TeamControllerRest {
 
+    @Autowired //Lo levantamos, hace el new del objeto! no lo hacemos nosotros porque lo hace spring con el .properties
+    private AppConfiguration appConfiguration;
     @GetMapping("/saludo")
     public String holaMundo() {
-        return "Hola Mundo Spring Rest";
+        return "Hola Mundo Spring Rest" + appConfiguration;
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<TeamDTO> getTeamById(@PathVariable Integer id) {
-   //     TeamDTO teamDTO = new TeamDTO(1, "Seleccion Argentina");
-            TeamDTO teamDTO = null;
+        TeamDTO teamDTO = new TeamDTO(1, "Seleccion Argentina");
+      //      TeamDTO teamDTO = null;
             if(teamDTO == null)
                 return ResponseEntity.notFound().build(); //404
         return ResponseEntity.ok(teamDTO);
@@ -55,6 +60,24 @@ public class TeamControllerRest {
         if(id == 3)
             return ResponseEntity.notFound().build(); //404
         return ResponseEntity.ok().build();
+    }
+    @GetMapping("/{id}/players/{idPlayer}")
+    public ResponseEntity<PlayerDTO> getTeamPlayerById(@PathVariable Integer id, @PathVariable Integer idPlayer) {
+        //     TeamDTO teamDTO = new TeamDTO(1, "Seleccion Argentina");
+        PlayerDTO playerDTO = new PlayerDTO(idPlayer,"Batistuta");
+        if(playerDTO == null)
+            return ResponseEntity.notFound().build(); //404
+        return ResponseEntity.ok(playerDTO);
+    }
+    @GetMapping("/{id}/players")
+    public ResponseEntity<List<PlayerDTO>> getTeamPlayers(@PathVariable Integer id) {
+        //     TeamDTO teamDTO = new TeamDTO(1, "Seleccion Argentina");
+        List<PlayerDTO> players = new ArrayList<>();
+        players.add(new PlayerDTO(1, "Batistuta"));
+        players.add(new PlayerDTO(2, "Balbo"));
+        players.add(new PlayerDTO(3, "Vazquez"));
+
+        return ResponseEntity.ok(players);
     }
 
 
