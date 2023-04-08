@@ -65,16 +65,14 @@ public class TeamControllerRest {
 
     @GetMapping
     public ResponseEntity<List<TeamDTO>> getAllTeams() {
-        List<TeamDTO> teams = new ArrayList<>();
-        teams.add(new TeamDTO(1, "Seleccion Argentina"));
-        teams.add(new TeamDTO(2, "Seleccion Ecuador"));
-        teams.add(new TeamDTO(3, "Seleccion Paraguay"));
+        List<TeamDTO> teams = teamService.findAllTeams();
         return ResponseEntity.ok(teams);
     }
 
     @PostMapping
     public ResponseEntity<String> saveTeam(@RequestBody TeamDTO teamDTO) {
         System.out.println("Saving team........." + teamDTO);
+        teamService.saveTeam(teamDTO);
         return ResponseEntity.ok("http://localhost:8080/teams/" + teamDTO.getId());
     }
 
@@ -92,6 +90,7 @@ public class TeamControllerRest {
         System.out.println("Eliminando team con id " + id);
         if (id == 3)
             return ResponseEntity.notFound().build(); //404
+        teamService.deleteById(id);
         return ResponseEntity.ok().build();
     }
 

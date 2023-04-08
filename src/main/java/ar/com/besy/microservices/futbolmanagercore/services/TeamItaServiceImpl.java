@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Lazy
@@ -24,5 +25,13 @@ public class TeamItaServiceImpl implements TeamService{
         TeamDTO teamDTO = teamClient.getTeamById(id);
         Optional<TeamDTO> optionalTeam = Optional.ofNullable(teamDTO);
         return optionalTeam;
+    }
+    public List<TeamDTO> findAllTeams(){
+       return null;
+    }
+    public Integer saveTeam(TeamDTO teamDTO){
+        return null;
+    }
+    public void deleteById(Integer id){
     }
 }
