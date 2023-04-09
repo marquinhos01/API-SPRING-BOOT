@@ -3980,3 +3980,308 @@ org.postgresql.util.PSQLException: ERROR: no existe la relación «equipos»
 19:28:27:750 [SpringApplicationShutdownHook]  DEBUG org.hibernate.SQL -drop sequence if exists equipos_seq
 19:28:27:753 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
 19:28:27:755 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:38:16:532 [background-preinit]  INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 8.0.0.Final
+15:38:16:573 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Starting FutbolManagerCoreApplication using Java 19.0.2 with PID 3984 (C:\Users\Hexa\Desktop\futbol-manager-core\target\classes started by Hexa in C:\Users\Hexa\Desktop\futbol-manager-core)
+15:38:16:574 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -No active profile set, falling back to 1 default profile: "default"
+15:38:17:387 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:38:17:449 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+15:38:17:991 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+15:38:18:001 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+15:38:18:002 [main]  INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:38:18:002 [main]  INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.5]
+15:38:18:089 [main]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+15:38:18:091 [main]  INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1476 ms
+15:38:18:245 [main]  INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:38:18:309 [main]  INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.1.7.Final
+15:38:18:578 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:38:18:855 [main]  INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7871d261
+15:38:18:856 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:38:18:900 [main]  INFO  SQL dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+15:38:19:546 [main]  DEBUG org.hibernate.SQL -drop table if exists equipos cascade
+15:38:19:553 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+15:38:19:553 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -la tabla «equipos» no existe, omitiendo
+15:38:19:553 [main]  DEBUG org.hibernate.SQL -drop sequence if exists equipos_seq
+15:38:19:554 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+15:38:19:554 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -la secuencia «equipos_seq» no existe, omitiendo
+15:38:19:557 [main]  DEBUG org.hibernate.SQL -create sequence equipos_seq start with 1 increment by 50
+15:38:19:574 [main]  DEBUG org.hibernate.SQL -create table equipos (id integer not null, afiliate_quantity integer not null, body varchar(255), logo varchar(255), nombre varchar(255), title varchar(255), year integer not null, primary key (id))
+15:38:19:595 [main]  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:38:19:604 [main]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:38:20:091 [main]  WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:38:20:860 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+15:38:20:882 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+15:38:20:892 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Started FutbolManagerCoreApplication in 4.696 seconds (process running for 5.659)
+15:38:24:892 [SpringApplicationShutdownHook]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+15:38:24:893 [SpringApplicationShutdownHook]  INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+15:38:24:893 [SpringApplicationShutdownHook]  DEBUG org.hibernate.SQL -drop table if exists equipos cascade
+15:38:24:902 [SpringApplicationShutdownHook]  DEBUG org.hibernate.SQL -drop sequence if exists equipos_seq
+15:38:24:905 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:38:24:907 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:38:27:007 [background-preinit]  INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 8.0.0.Final
+15:38:27:046 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Starting FutbolManagerCoreApplication using Java 19.0.2 with PID 6804 (C:\Users\Hexa\Desktop\futbol-manager-core\target\classes started by Hexa in C:\Users\Hexa\Desktop\futbol-manager-core)
+15:38:27:048 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -No active profile set, falling back to 1 default profile: "default"
+15:38:27:775 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:38:27:833 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+15:38:28:288 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+15:38:28:298 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+15:38:28:299 [main]  INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:38:28:299 [main]  INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.5]
+15:38:28:383 [main]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+15:38:28:385 [main]  INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1278 ms
+15:38:28:496 [main]  INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:38:28:540 [main]  INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.1.7.Final
+15:38:28:749 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:38:28:881 [main]  INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a7a1a0d
+15:38:28:883 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:38:28:919 [main]  INFO  SQL dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+15:38:29:499 [main]  DEBUG org.hibernate.SQL -drop table if exists equipos cascade
+15:38:29:502 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+15:38:29:502 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -la tabla «equipos» no existe, omitiendo
+15:38:29:502 [main]  DEBUG org.hibernate.SQL -drop sequence if exists equipos_seq
+15:38:29:503 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+15:38:29:503 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -la secuencia «equipos_seq» no existe, omitiendo
+15:38:29:506 [main]  DEBUG org.hibernate.SQL -create sequence equipos_seq start with 1 increment by 50
+15:38:29:511 [main]  DEBUG org.hibernate.SQL -create table equipos (id integer not null, afiliate_quantity integer not null, body varchar(255), logo varchar(255), nombre varchar(255), title varchar(255), year integer not null, primary key (id))
+15:38:29:521 [main]  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:38:29:528 [main]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:38:29:897 [main]  WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:38:30:523 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+15:38:30:543 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+15:38:30:550 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Started FutbolManagerCoreApplication in 3.855 seconds (process running for 4.258)
+15:38:30:610 [http-nio-8080-exec-1]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:38:30:611 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+15:38:30:612 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 0 ms
+15:38:31:063 [http-nio-8080-exec-10]  INFO  o.s.api.AbstractOpenApiResource -Init duration for springdoc-openapi is: 183 ms
+15:38:40:431 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0
+15:39:01:168 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+15:39:01:176 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -select nextval('equipos_seq')
+15:39:01:194 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+15:39:08:824 [http-nio-8080-exec-4]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+15:39:08:825 [http-nio-8080-exec-4]  DEBUG org.hibernate.SQL -select nextval('equipos_seq')
+15:39:08:826 [http-nio-8080-exec-4]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+15:39:28:227 [http-nio-8080-exec-3]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+15:39:28:229 [http-nio-8080-exec-3]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+15:39:43:828 [http-nio-8080-exec-8]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+15:39:43:829 [http-nio-8080-exec-8]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+15:39:52:839 [http-nio-8080-exec-10]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+15:39:52:845 [http-nio-8080-exec-10]  DEBUG org.hibernate.SQL -update equipos set afiliate_quantity=?, body=?, logo=?, nombre=?, title=?, year=? where id=?
+15:40:00:232 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+15:40:00:233 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -update equipos set afiliate_quantity=?, body=?, logo=?, nombre=?, title=?, year=? where id=?
+15:40:02:351 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0
+15:50:40:516 [SpringApplicationShutdownHook]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+15:50:40:516 [SpringApplicationShutdownHook]  INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+15:50:40:517 [SpringApplicationShutdownHook]  DEBUG org.hibernate.SQL -drop table if exists equipos cascade
+15:50:40:520 [SpringApplicationShutdownHook]  DEBUG org.hibernate.SQL -drop sequence if exists equipos_seq
+15:50:40:523 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:50:40:526 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:50:43:504 [background-preinit]  INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 8.0.0.Final
+15:50:43:537 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Starting FutbolManagerCoreApplication using Java 19.0.2 with PID 3824 (C:\Users\Hexa\Desktop\futbol-manager-core\target\classes started by Hexa in C:\Users\Hexa\Desktop\futbol-manager-core)
+15:50:43:538 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -No active profile set, falling back to 1 default profile: "default"
+15:50:44:213 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:50:44:258 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+15:50:44:749 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+15:50:44:757 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+15:50:44:757 [main]  INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:50:44:758 [main]  INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.5]
+15:50:44:829 [main]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+15:50:44:831 [main]  INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1248 ms
+15:50:44:964 [main]  INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:50:45:010 [main]  INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.1.7.Final
+15:50:45:246 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:50:45:375 [main]  INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5773d271
+15:50:45:377 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:50:45:412 [main]  INFO  SQL dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+15:50:45:985 [main]  DEBUG org.hibernate.SQL -drop table if exists equipos cascade
+15:50:45:988 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+15:50:45:988 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -la tabla «equipos» no existe, omitiendo
+15:50:45:988 [main]  DEBUG org.hibernate.SQL -drop sequence if exists equipos_seq
+15:50:45:988 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+15:50:45:988 [main]  WARN  o.h.e.jdbc.spi.SqlExceptionHelper -la secuencia «equipos_seq» no existe, omitiendo
+15:50:45:992 [main]  DEBUG org.hibernate.SQL -create sequence equipos_seq start with 1 increment by 50
+15:50:45:997 [main]  DEBUG org.hibernate.SQL -create table equipos (id integer not null, afiliate_quantity integer not null, body varchar(255), logo varchar(255), nombre varchar(255), title varchar(255), year integer not null, primary key (id))
+15:50:46:007 [main]  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:50:46:014 [main]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:50:46:388 [main]  WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:50:47:016 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+15:50:47:033 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+15:50:47:040 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Started FutbolManagerCoreApplication in 3.819 seconds (process running for 4.217)
+15:50:48:799 [http-nio-8080-exec-1]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:50:48:799 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+15:50:48:800 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 1 ms
+15:50:48:887 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+15:52:10:951 [http-nio-8080-exec-3]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+15:52:45:444 [http-nio-8080-exec-4]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+15:52:46:912 [http-nio-8080-exec-5]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+15:52:51:400 [http-nio-8080-exec-9]  INFO  o.s.api.AbstractOpenApiResource -Init duration for springdoc-openapi is: 175 ms
+15:53:11:504 [http-nio-8080-exec-10]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+15:53:11:509 [http-nio-8080-exec-10]  DEBUG org.hibernate.SQL -select nextval('equipos_seq')
+15:53:11:526 [http-nio-8080-exec-10]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+15:53:23:628 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+15:53:23:629 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select nextval('equipos_seq')
+15:53:23:629 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+15:53:32:451 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+15:53:32:452 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+15:53:35:992 [http-nio-8080-exec-3]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+15:59:14:135 [SpringApplicationShutdownHook]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+15:59:14:136 [SpringApplicationShutdownHook]  INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+15:59:14:136 [SpringApplicationShutdownHook]  DEBUG org.hibernate.SQL -drop table if exists equipos cascade
+15:59:14:141 [SpringApplicationShutdownHook]  DEBUG org.hibernate.SQL -drop sequence if exists equipos_seq
+15:59:14:144 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:59:14:147 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:59:15:482 [background-preinit]  INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 8.0.0.Final
+15:59:15:515 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Starting FutbolManagerCoreApplication using Java 19.0.2 with PID 10716 (C:\Users\Hexa\Desktop\futbol-manager-core\target\classes started by Hexa in C:\Users\Hexa\Desktop\futbol-manager-core)
+15:59:15:516 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -No active profile set, falling back to 1 default profile: "default"
+15:59:16:149 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:59:16:210 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+15:59:16:646 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+15:59:16:656 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+15:59:16:657 [main]  INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:59:16:658 [main]  INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.5]
+15:59:16:740 [main]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+15:59:16:742 [main]  INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1190 ms
+15:59:16:871 [main]  INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:59:16:917 [main]  INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.1.7.Final
+15:59:17:123 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:59:17:266 [main]  INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@610fbe1c
+15:59:17:268 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:59:17:309 [main]  INFO  SQL dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+15:59:17:923 [main]  DEBUG org.hibernate.SQL -create table equipos (id integer not null, afiliate_quantity integer not null, body varchar(255), logo varchar(255), nombre varchar(255), title varchar(255), year integer not null, primary key (id))
+15:59:17:933 [main]  DEBUG org.hibernate.SQL -create sequence equipos_seq start with 1 increment by 50
+15:59:17:934 [main]  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:59:17:941 [main]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:59:18:294 [main]  WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:59:18:956 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+15:59:18:976 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+15:59:18:984 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Started FutbolManagerCoreApplication in 3.782 seconds (process running for 4.201)
+16:02:09:515 [SpringApplicationShutdownHook]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+16:02:09:517 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+16:02:09:519 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+16:02:10:867 [background-preinit]  INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 8.0.0.Final
+16:02:10:901 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Starting FutbolManagerCoreApplication using Java 19.0.2 with PID 13980 (C:\Users\Hexa\Desktop\futbol-manager-core\target\classes started by Hexa in C:\Users\Hexa\Desktop\futbol-manager-core)
+16:02:10:902 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -No active profile set, falling back to 1 default profile: "default"
+16:02:11:501 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:02:11:559 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+16:02:12:042 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+16:02:12:052 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+16:02:12:053 [main]  INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+16:02:12:053 [main]  INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.5]
+16:02:12:132 [main]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+16:02:12:134 [main]  INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1187 ms
+16:02:12:239 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+16:02:12:396 [main]  INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ea7a4c3
+16:02:12:397 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+16:02:12:430 [main]  INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+16:02:12:466 [main]  INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.1.7.Final
+16:02:12:774 [main]  INFO  SQL dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+16:02:13:354 [main]  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:02:13:362 [main]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:02:13:736 [main]  WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:02:14:376 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+16:02:14:393 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+16:02:14:400 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Started FutbolManagerCoreApplication in 3.853 seconds (process running for 4.254)
+16:02:22:002 [http-nio-8080-exec-1]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:02:22:002 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+16:02:22:003 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 1 ms
+16:02:22:088 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:02:27:099 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:02:27:104 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -select nextval('equipos_seq')
+16:02:27:120 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:02:29:652 [http-nio-8080-exec-3]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:02:55:535 [SpringApplicationShutdownHook]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+16:02:55:536 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+16:02:55:538 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+16:03:06:347 [background-preinit]  INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 8.0.0.Final
+16:03:06:378 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Starting FutbolManagerCoreApplication using Java 19.0.2 with PID 15232 (C:\Users\Hexa\Desktop\futbol-manager-core\target\classes started by Hexa in C:\Users\Hexa\Desktop\futbol-manager-core)
+16:03:06:379 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -No active profile set, falling back to 1 default profile: "default"
+16:03:06:966 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:03:07:019 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+16:03:07:480 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+16:03:07:487 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+16:03:07:488 [main]  INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+16:03:07:489 [main]  INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.5]
+16:03:07:563 [main]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+16:03:07:564 [main]  INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1149 ms
+16:03:07:664 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+16:03:07:821 [main]  INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d6f6860
+16:03:07:822 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+16:03:07:855 [main]  INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+16:03:07:892 [main]  INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.1.7.Final
+16:03:08:164 [main]  INFO  SQL dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+16:03:08:727 [main]  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:03:08:734 [main]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:03:09:110 [main]  WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:03:09:785 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+16:03:09:805 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+16:03:09:813 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Started FutbolManagerCoreApplication in 3.738 seconds (process running for 4.126)
+16:03:19:130 [http-nio-8080-exec-1]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:03:19:130 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+16:03:19:131 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 1 ms
+16:03:19:224 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:03:30:477 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:03:30:490 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -update equipos set afiliate_quantity=?, body=?, logo=?, nombre=?, title=?, year=? where id=?
+16:03:41:049 [http-nio-8080-exec-4]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:03:41:052 [http-nio-8080-exec-4]  DEBUG org.hibernate.SQL -select nextval('equipos_seq')
+16:03:41:057 [http-nio-8080-exec-4]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:03:44:217 [http-nio-8080-exec-5]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:03:48:032 [http-nio-8080-exec-3]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:04:12:820 [http-nio-8080-exec-6]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:04:12:822 [http-nio-8080-exec-6]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:04:24:573 [SpringApplicationShutdownHook]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+16:04:24:574 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+16:04:24:576 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+16:04:30:478 [background-preinit]  INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 8.0.0.Final
+16:04:30:509 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Starting FutbolManagerCoreApplication using Java 19.0.2 with PID 16228 (C:\Users\Hexa\Desktop\futbol-manager-core\target\classes started by Hexa in C:\Users\Hexa\Desktop\futbol-manager-core)
+16:04:30:510 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -No active profile set, falling back to 1 default profile: "default"
+16:04:31:117 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:04:31:171 [main]  INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+16:04:31:659 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+16:04:31:669 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+16:04:31:669 [main]  INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+16:04:31:669 [main]  INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.5]
+16:04:31:756 [main]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+16:04:31:757 [main]  INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1211 ms
+16:04:31:873 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+16:04:32:032 [main]  INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2401856
+16:04:32:037 [main]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+16:04:32:082 [main]  INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+16:04:32:123 [main]  INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.1.7.Final
+16:04:32:416 [main]  INFO  SQL dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+16:04:32:940 [main]  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:04:32:947 [main]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:04:33:292 [main]  WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:04:34:009 [main]  INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+16:04:34:034 [main]  INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+16:04:34:041 [main]  INFO  a.c.b.m.f.FutbolManagerCoreApplication -Started FutbolManagerCoreApplication in 3.827 seconds (process running for 4.221)
+16:04:45:983 [http-nio-8080-exec-1]  INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:04:45:984 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+16:04:45:985 [http-nio-8080-exec-1]  INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 0 ms
+16:04:46:087 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:04:46:094 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select nextval('equipos_seq')
+16:04:46:111 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:04:48:862 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:04:57:547 [http-nio-8080-exec-3]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:05:08:752 [http-nio-8080-exec-7]  INFO  o.s.api.AbstractOpenApiResource -Init duration for springdoc-openapi is: 156 ms
+16:05:12:892 [http-nio-8080-exec-8]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:05:49:023 [http-nio-8080-exec-9]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:06:12:888 [http-nio-8080-exec-10]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:06:12:889 [http-nio-8080-exec-10]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:06:15:018 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:06:15:019 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:06:17:990 [http-nio-8080-exec-2]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:06:26:922 [http-nio-8080-exec-3]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:06:26:923 [http-nio-8080-exec-3]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:06:27:597 [http-nio-8080-exec-4]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:06:27:598 [http-nio-8080-exec-4]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:06:29:990 [http-nio-8080-exec-5]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:06:49:600 [http-nio-8080-exec-6]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:06:49:602 [http-nio-8080-exec-6]  DEBUG org.hibernate.SQL -update equipos set afiliate_quantity=?, body=?, logo=?, nombre=?, title=?, year=? where id=?
+16:06:57:332 [http-nio-8080-exec-7]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:07:05:386 [http-nio-8080-exec-8]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:07:05:387 [http-nio-8080-exec-8]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:07:08:435 [http-nio-8080-exec-9]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:07:36:900 [http-nio-8080-exec-10]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.id=?
+16:07:36:901 [http-nio-8080-exec-10]  DEBUG org.hibernate.SQL -insert into equipos (afiliate_quantity, body, logo, nombre, title, year, id) values (?, ?, ?, ?, ?, ?, ?)
+16:07:39:749 [http-nio-8080-exec-1]  DEBUG org.hibernate.SQL -select t1_0.id,t1_0.afiliate_quantity,t1_0.body,t1_0.logo,t1_0.nombre,t1_0.title,t1_0.year from equipos t1_0 where t1_0.year<?
+16:55:01:605 [SpringApplicationShutdownHook]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+16:55:01:615 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+16:55:01:619 [SpringApplicationShutdownHook]  INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.

@@ -27,7 +27,8 @@ public class TeamArgServiceImpl implements TeamService {
         return optionalTeam;
     }
     public List<TeamDTO> findAllTeams(){
-        List<TeamDTO> teams = teamRepository.findAll();
+        //List<TeamDTO> teams = teamRepository.findAll();
+        List<TeamDTO> teams = teamRepository.findByYearLessThan(1900);
         return teams;
     }
     public Integer saveTeam(TeamDTO teamDTO){
